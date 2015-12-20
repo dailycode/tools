@@ -1,0 +1,60 @@
+.hehaha{
+	height: 2000px;
+}
+
+.interviews{
+	background: $backgroundInterview;
+	height: auto;
+	margin-top: 50px;
+}
+.avatar{
+	width: 130px;
+	height: 130px;
+	float: left;
+}
+.title-author{
+	color: $colorInterviewDefault;
+	font: 700 $fontInterviewTitle $fontAll;
+}
+
+.website{
+	color: $colorWebsite;
+}
+
+.description-author{
+	text-align: left;
+	margin: 10px 0;
+	color: $colorDescriptions;
+}
+.tools{
+	margin: 10px 0;
+}
+.name-tools{
+	font-size: 18px;
+	font-weight: 900;
+	background: $colorInterviewDefault;
+	display: inline-block;
+	color: $colorAll;
+	text-transform: uppercase;
+	text-align: center;
+	padding: 10px 10px 10px 20px;
+	margin: 7px 0 0 38px;
+}
+.number{
+	background: $colorInterviewDefault - 50;
+	font-size: 38px;
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	border-radius: 100%;
+	color: $colorAll;
+	text-align: center;
+	font-weight: 900;
+}
+.description-tools{
+	background: $colorInterviewDefault;
+	color: $colorAll;
+	padding: 8px;
+	font-size: 16px;
+	margin-top: 10px;
+}
