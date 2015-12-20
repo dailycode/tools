@@ -4,30 +4,30 @@
 			<h1 class="title-default">entrevistados</h1>
 		</div>
 		<div class="clear"></div>
-		{% for post in post.site %}
+		{% for post in site.posts  %}
 			<section class="col-md-5 interviews">
 				<header class="col-md-12 info-author">
-					<img class="avatar img-circle" src="{{ post.img }}" alt="">
-					<h3 class="title-author">{{ post.author }}</h3>
+					<img class="avatar img-circle" src="{{ post.img }}" alt="{{ post.name }}">
+					<h3 class="title-author">{{ post.name }}</h3>
 					<a href="#" class="website"><small>{{ post.website }}</small></a>
 					<span class="col-md-12 description-author">{{ post.description }}</span>
 				</header>
 				<article class="col-md-12 tools">
 					<span class="number">1</span>
-					<h2 class="name-tools">{{ post.one }}</h2>
-					<p class="col-md-12 description-tools">{{ post.tools-description-one }}</p>
+					<h2 class="name-tools">{{ post.tools-one }}</h2>
+					<p class="col-md-12 description-tools">{{ post.description-one }}</p>
 				</article>
 
 				<article class="col-md-12 tools">
 					<span class="number">2</span>
-					<h2 class="name-tools">{{ post.two }}</h2>
-					<p class="col-md-12 description-tools">{{ post.tools-description-two }}</p>
+					<h2 class="name-tools">{{ post.tools-two }}</h2>
+					<p class="col-md-12 description-tools">{{ post.description-two }}</p>
 				</article>
 
 				<article class="col-md-12 tools">
 					<span class="number">3</span>
-					<h2 class="name-tools">{{ post.three }}</h2>
-					<p class="col-md-12 description-tools">{{ post.tools-description-three }}</p>
+					<h2 class="name-tools">{{ post.tools-three }}</h2>
+					<p class="col-md-12 description-tools">{{ post.description-three }}</p>
 				</article>
 			</section>
 		{% endfor %}
