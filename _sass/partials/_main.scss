@@ -69,8 +69,12 @@
 }
 #pieLegend{
 	@include make-md-column(4);
-	@include make-md-column-offset(2);
-	margin-top: 70px;
+	position: absolute;
+	bottom: 10%;
+	right: 0;
+}
+.graphic{
+	position: relative;
 }
 .titleLegend{
 	color: $colorAll;
