@@ -70,6 +70,7 @@
 #pieLegend{
 	@include make-md-column(4);
 	@include make-md-column-offset(2);
+	margin-top: 70px;
 }
 .titleLegend{
 	color: $colorAll;
