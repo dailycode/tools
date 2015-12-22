@@ -2,6 +2,8 @@
 	background: $backgroundInterview;
 	height: auto;
 	margin: 20px 46px;
+	border: 1px solid $backgroundInterview - 40;
+	border-radius: 5px;
 }
 .avatar{
 	width: 130px;
