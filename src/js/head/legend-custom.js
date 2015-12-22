@@ -34,5 +34,6 @@ if(!!(window.addEventListener)) window.addEventListener('DOMContentLoaded', main
     var ctx = document.getElementById("pieChart").getContext("2d");
     var pieChart = new Chart(ctx).Pie(data);
     legend(document.getElementById("pieLegend"), data, pieChart, "<%=label%>");
+    Chart.defaults.global.responsive = true;
 
 }
