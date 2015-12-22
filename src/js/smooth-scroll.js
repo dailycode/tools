@@ -3,9 +3,7 @@
  * (c) 2015 Chris Ferdinandi
  * MIT License
  * http://github.com/cferdinandi/smooth-scroll
- */
-
-(function (root, factory) {
+ */(function (root, factory) {
 	if ( typeof define === 'function' && define.amd ) {
 		define([], factory(root));
 	} else if ( typeof exports === 'object' ) {
