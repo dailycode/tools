@@ -4,18 +4,19 @@
 	background: url('../image/Background.png');
 	background-size: cover;
 }
+.logo{
+	height: 280px;
+	display: block;
+	background: url('../image/logo.png') no-repeat;
+	background-size: contain;
+}
 .intro{
-	position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%);
+	margin-top: 30px;
 }
 .text-intro{
 	color: $colorAll;
-	font: $fontSizeIntro $fontAll;
+	font-size: 38px;
 	text-align: center;
-	line-height: 60px;
 	font-weight: 300;
 }
 
