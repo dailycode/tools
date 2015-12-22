@@ -65,6 +65,16 @@ gulp.task('js', function(){
 		.pipe(gulp.dest('assets/js'));
 });
 
+/* Compiled Javascript head */
+gulp.task('js-head', function(){
+	return gulp.src('src/js/head/*.js')
+		.pipe(concat('head.js'))
+		.pipe(uglify())
+		.pipe(gulp.dest('_site/assets/js/head'))
+		.pipe(browserSync.reload({stream:true}))
+		.pipe(gulp.dest('assets/js/head'));
+});
+
 gulp.task('fonts', function(){
 	return gulp.src('src/fonts/*')
 		.pipe(gulp.dest('assets/fonts'))
@@ -73,8 +83,9 @@ gulp.task( 'watch', function(){
 	gulp.watch('_sass/**/*.scss', ['sass']);
 	gulp.watch('src/image/**/*.{jpg,png,svg,jpeg}', ['imagemin']);
 	gulp.watch('src/js/**/*.js', ['js']);
+	gulp.watch('src/js/head/*.js', ['js-head']);
 	gulp.watch('src/fonts/', ['fonts']);
 	gulp.watch(['*.html', '_layouts/*.html', '_posts/*', '_includes/*', 'pages/*'], ['jekyll-rebuild']);
 });
 
-gulp.task( 'default', ['imagemin','browser-sync', 'watch', 'fonts'] );
+gulp.task( 'default', ['imagemin','browser-sync', 'watch', 'fonts', 'js-head'] );
