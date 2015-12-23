@@ -12,6 +12,12 @@
 		transform: rotate(45deg);
 		position: absolute;
 		left: 50%;
-		top: 40px;
+	}
+}
+.arrow-graphic{
+	&:after{
+		position: absolute;
+		bottom: 30px;
+		left: 60%;
 	}
 }
