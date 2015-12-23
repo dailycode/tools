@@ -67,6 +67,9 @@
 	background: rgba(0, 0, 0, 0.94);
 	position: relative;
 }
+#pieChart{
+	margin-top: 20px;
+}
 #pieLegend{
 	@include make-md-column(2);
 	position: absolute;
